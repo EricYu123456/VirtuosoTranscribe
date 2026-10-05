@@ -1,0 +1,28 @@
+model:
+  architecture: dual
+  d_model: 128
+  n_heads: 4
+  encoder_layers: 2
+  decoder_layers: 2
+  dim_feedforward: 512
+  dropout: 0.1
+  max_sequence_length: 4096
+  conditioned: false
+data:
+  dataset: data/processed/curated/dataset.json
+training:
+  epochs: 50
+  batch_size: 8
+  learning_rate: 0.0002
+  gradient_accumulation: 4
+  warmup_steps: 2000
+  label_smoothing: 0.1
+  seed: 42
+  device: cpu
+  num_threads: 2
+  save_every: 5
+constraints:
+  melody_mode: soft
+  lambda_melody: 0.1
+output_dir: outputs/checkpoints/dual_encoder
+

@@ -1,0 +1,15 @@
+preset: CONCERT_TRANSCRIPTION
+melody_preservation: 1.0
+octave_doubling: 0.7
+register_expansion: 0.75
+chord_thickening: 0.5
+bass_reinforcement: 0.65
+inner_voice_density: 0.55
+figuration_density: 0.0
+countermelody: 0.0
+ornamentation: 0.0
+harmonic_freedom: 0.0
+rhythmic_freedom: 0.0
+virtuosity: 0.7
+texture_density: 0.75
+

@@ -1,0 +1,16 @@
+# V1 preserves harmony and rhythm; only implemented texture controls are enabled.
+preset: ROMANTIC
+melody_preservation: 1.0
+octave_doubling: 0.55
+register_expansion: 0.65
+chord_thickening: 0.4
+bass_reinforcement: 0.5
+inner_voice_density: 0.5
+figuration_density: 0.0
+countermelody: 0.0
+ornamentation: 0.0
+harmonic_freedom: 0.0
+rhythmic_freedom: 0.0
+virtuosity: 0.5
+texture_density: 0.6
+

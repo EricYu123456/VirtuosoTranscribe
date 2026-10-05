@@ -1,0 +1,33 @@
+# Measured target techniques are supervision labels, not runtime target lookup.
+# Matched ten real Horn bars, one work, all train; no generalization estimate.
+model:
+  architecture: single
+  d_model: 96
+  n_heads: 4
+  encoder_layers: 1
+  decoder_layers: 2
+  dim_feedforward: 192
+  dropout: 0.0
+  max_sequence_length: 1024
+  conditioned: true
+data:
+  dataset: data/processed/real_overfit/dataset.json
+training:
+  epochs: 1500
+  batch_size: 10
+  learning_rate: 0.003
+  weight_decay: 0.0
+  gradient_accumulation: 1
+  gradient_clip: 1.0
+  label_smoothing: 0.0
+  warmup_steps: 10
+  seed: 42
+  device: cpu
+  num_threads: 2
+  max_train_segments: 10
+  save_every: 25
+  early_stop_loss: 0.001
+constraints:
+  melody_mode: soft
+  lambda_melody: 0.1
+output_dir: outputs/checkpoints/real_horn_conditioned

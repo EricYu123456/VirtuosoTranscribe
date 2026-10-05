@@ -1,0 +1,80 @@
+[
+  {
+    "pair_id": "synthetic_001",
+    "work_id": "synthetic_study",
+    "composer": "Synthetic fixture",
+    "arranger": "Deterministic fixture",
+    "source": {
+      "path": "source.musicxml",
+      "solo_part": "Violoncello",
+      "solo_instrument": "Violoncello",
+      "accompaniment_parts": [
+        "Piano"
+      ]
+    },
+    "target": {
+      "path": "target.musicxml",
+      "instrument": "piano"
+    },
+    "license": {
+      "source_status": "CHECKED",
+      "target_status": "CHECKED",
+      "origin": "Original, programmatically authored synthetic test material",
+      "redistribution": "CC0-1.0"
+    },
+    "data_kind": "synthetic_fixture",
+    "split": "train"
+  },
+  {
+    "pair_id": "synthetic_002",
+    "work_id": "synthetic_study",
+    "composer": "Synthetic fixture",
+    "arranger": "Deterministic fixture",
+    "source": {
+      "path": "violin_source.musicxml",
+      "solo_part": "Violin",
+      "solo_instrument": "Violin",
+      "accompaniment_parts": [
+        "Piano"
+      ]
+    },
+    "target": {
+      "path": "violin_target.musicxml",
+      "instrument": "piano"
+    },
+    "license": {
+      "source_status": "CHECKED",
+      "target_status": "CHECKED",
+      "origin": "Original, programmatically authored synthetic test material",
+      "redistribution": "CC0-1.0"
+    },
+    "data_kind": "synthetic_fixture",
+    "split": "train"
+  },
+  {
+    "pair_id": "synthetic_003",
+    "work_id": "synthetic_study",
+    "composer": "Synthetic fixture",
+    "arranger": "Deterministic fixture",
+    "source": {
+      "path": "voice_source.musicxml",
+      "solo_part": "Voice",
+      "solo_instrument": "Voice",
+      "accompaniment_parts": [
+        "Piano"
+      ]
+    },
+    "target": {
+      "path": "voice_target.musicxml",
+      "instrument": "piano"
+    },
+    "license": {
+      "source_status": "CHECKED",
+      "target_status": "CHECKED",
+      "origin": "Original, programmatically authored synthetic test material",
+      "redistribution": "CC0-1.0"
+    },
+    "data_kind": "synthetic_fixture",
+    "split": "train"
+  }
+]

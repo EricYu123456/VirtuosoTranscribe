@@ -1,0 +1,15 @@
+preset: VIRTUOSIC
+melody_preservation: 1.0
+octave_doubling: 0.85
+register_expansion: 0.9
+chord_thickening: 0.65
+bass_reinforcement: 0.8
+inner_voice_density: 0.65
+figuration_density: 0.0
+countermelody: 0.0
+ornamentation: 0.0
+harmonic_freedom: 0.0
+rhythmic_freedom: 0.0
+virtuosity: 0.9
+texture_density: 0.9
+

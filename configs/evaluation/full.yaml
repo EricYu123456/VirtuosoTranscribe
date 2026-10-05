@@ -1,0 +1,36 @@
+# Actual checkpoints are supplied via --checkpoint NAME=PATH.
+# No synthetic scores or metrics are substituted for unavailable neural methods.
+seed: 0
+generation: {temperature: 0.0, beam_width: 1, top_p: 1.0, max_new_tokens: 2048}
+methods:
+  - {name: literal, generator: literal}
+  - {name: rule_faithful, generator: rule_based, preset: faithful}
+  - {name: rule_romantic, generator: rule_based, preset: romantic}
+  - name: octave_off
+    generator: rule_based
+    preset: faithful
+    controls: {octave_doubling: 0.0}
+  - name: octave_on
+    generator: rule_based
+    preset: faithful
+    controls: {octave_doubling: 1.0}
+  - {name: vanilla_none, generator: neural, checkpoint_key: vanilla, melody_mode: none}
+  - {name: vanilla_soft, generator: neural, checkpoint_key: vanilla, melody_mode: soft}
+  - {name: vanilla_hard, generator: neural, checkpoint_key: vanilla, melody_mode: hard}
+  - {name: conditioned_concat, generator: neural, checkpoint_key: conditioned, preset: romantic, melody_mode: hard}
+  # The supplied tiny_dual checkpoint is unconditioned. Compare its actual
+  # model/training metadata with vanilla_hard before interpreting this ablation.
+  - {name: dual_encoder, generator: neural, checkpoint_key: dual, melody_mode: hard}
+  - name: conditioned_octave_off
+    generator: neural
+    checkpoint_key: conditioned
+    melody_mode: hard
+    controls: {octave_doubling: 0.0}
+  - name: conditioned_octave_on
+    generator: neural
+    checkpoint_key: conditioned
+    melody_mode: hard
+    controls: {octave_doubling: 1.0}
+  - {name: candidates_first, generator: neural, checkpoint_key: conditioned, preset: romantic, num_candidates: 4, rerank: false, melody_mode: hard, temperature: 0.8, top_p: 0.95}
+  - {name: candidates_reranked, generator: neural, checkpoint_key: conditioned, preset: romantic, num_candidates: 4, rerank: true, melody_mode: hard, temperature: 0.8, top_p: 0.95}
+  - {name: reference_target, generator: reference_target}

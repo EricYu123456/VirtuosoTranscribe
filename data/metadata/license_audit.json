@@ -1,0 +1,37 @@
+{
+  "review_date": "2026-10-05",
+  "source": {
+    "license": "CC0-1.0",
+    "rights_in_xml": "OpenScore (CC0)",
+    "sha256": "11f8bd4edfd11dc303d4b46d480cf110cb7015af303abf0d3848c40984c202a1",
+    "source_license_file": "https://raw.githubusercontent.com/OpenScore/Lieder/38c5db510224d9facdc4b08d741fc788cfb58ea8/LICENSE.txt"
+  },
+  "target": {
+    "license": "cc-zero",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "public_url": "https://musescore.com/user/30059877/scores/6212007",
+    "subtitle": "arranged by August Horn",
+    "xml_rights": "None",
+    "pdmx_license_conflict": "False",
+    "pdmx_all_valid": "True",
+    "has_paywall": "False",
+    "is_official": "False",
+    "original_metadata_sha256": "f5981747d49f0a1e6a1cb5bc5a401056380f935c51d55a32f8d0eed0136128ed",
+    "score_sha256": "9ef3fa099a7f094d2826e9d2a8b12951f8b5c40174e70b83be216d266a9fae86",
+    "historical_identity_evidence": "Original uploader identifies exact replica of August Horn transcription; XML credits identify Horn; D957 full melody119/120matches. CatalogD889 correction independently recorded."
+  },
+  "archive_checksums": {
+    "mxl.tar.gz": "md5:49ffd75ecf5489c0be6d41182eb11ff7",
+    "metadata.tar.gz": "md5:5bc79445090dd2fe5e96cffa77a3461c"
+  },
+  "exclusions": {
+    "3252906": "Musetrainer copy license not independently verified; not included",
+    "4945970": "Titlecollision: ABC reel, unrelated melody",
+    "4685175": "Titlecollision: ABC reel, unrelated melody",
+    "191296": "Accompaniment-only arpeggio, no complete solo-melody piano transcription",
+    "4954098": "Lead-sheet chord symbols and short melody; no demonstrated complete artistic pairing",
+    "4676133": "Lead-sheet chord symbols and short melody; no demonstrated complete artistic pairing",
+    "1976341": "Samework/segmentidentity not verified at required melodyalignment quality"
+  },
+  "legal_validator_limit": "CHECKED records reviewed evidence; schema validation does not independently establish legal rights."
+}

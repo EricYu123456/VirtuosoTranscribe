@@ -1,0 +1,15 @@
+preset: FAITHFUL
+melody_preservation: 1.0
+octave_doubling: 0.0
+register_expansion: 0.0
+chord_thickening: 0.0
+bass_reinforcement: 0.0
+inner_voice_density: 0.35
+figuration_density: 0.0
+countermelody: 0.0
+ornamentation: 0.0
+harmonic_freedom: 0.0
+rhythmic_freedom: 0.0
+virtuosity: 0.25
+texture_density: 0.35
+

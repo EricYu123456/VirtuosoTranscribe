@@ -1,0 +1,32 @@
+# Original synthetic material. This validates learning, never artistic quality.
+model:
+  architecture: single
+  d_model: 96
+  n_heads: 4
+  encoder_layers: 1
+  decoder_layers: 2
+  dim_feedforward: 192
+  dropout: 0.0
+  max_sequence_length: 1024
+  conditioned: false
+data:
+  dataset: data/interim/training_fixture/processed_vanilla/dataset.json
+training:
+  epochs: 700
+  batch_size: 10
+  learning_rate: 0.003
+  weight_decay: 0.0
+  gradient_accumulation: 1
+  gradient_clip: 1.0
+  label_smoothing: 0.0
+  warmup_steps: 10
+  seed: 42
+  device: cpu
+  num_threads: 2
+  max_train_segments: 10
+  save_every: 25
+  early_stop_loss: 0.001
+constraints:
+  melody_mode: none
+output_dir: outputs/checkpoints/tiny_vanilla
+

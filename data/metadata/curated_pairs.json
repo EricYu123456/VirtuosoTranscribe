@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "pairs": [
+    {
+      "pair_id": "schubert_d957_horn",
+      "work_id": "schubert_d957_4",
+      "composer": "Franz Schubert",
+      "arranger": "August Horn",
+      "data_kind": "real_historical_transcription",
+      "split": "train",
+      "source": {
+        "path": "../raw/curated/schubert_d957_source.mxl",
+        "url": "https://raw.githubusercontent.com/OpenScore/Lieder/38c5db510224d9facdc4b08d741fc788cfb58ea8/scores/Schubert%2C_Franz/Schwanengesang%2C_D.957/04_St%C3%A4ndchen/lc5004835.mxl",
+        "sha256": "11f8bd4edfd11dc303d4b46d480cf110cb7015af303abf0d3848c40984c202a1"
+      },
+      "target": {
+        "pdmx_score_id": 6212007,
+        "path": "../raw/curated/schubert_d957_horn.mxl",
+        "url": "https://musescore.com/user/30059877/scores/6212007",
+        "pdmx_archive_member": "./mxl/9/47/QmRUQi9HSbua2aBdTwxsV4jzHHu2cyYZfMtqzFAS3BCQGY.mxl",
+        "sha256": "9ef3fa099a7f094d2826e9d2a8b12951f8b5c40174e70b83be216d266a9fae86"
+      },
+      "license": {
+        "source_status": "CHECKED",
+        "target_status": "CHECKED",
+        "source_license": "CC0-1.0",
+        "target_license": "CC0-1.0",
+        "source_evidence": "https://raw.githubusercontent.com/OpenScore/Lieder/38c5db510224d9facdc4b08d741fc788cfb58ea8/LICENSE.txt",
+        "target_evidence": "https://zenodo.org/records/15571083",
+        "target_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "target_license_conflict": false,
+        "review_date": "2026-10-05",
+        "review_method": "OpenScore commit-pinned LICENSE and XML rights; individual PDMX CSV and archived original MuseScore metadata; no_license_conflict and all_valid confirmed; archive MD5 and per-file SHA256 verified"
+      },
+      "alignment_review": {
+        "melody_matches": 119,
+        "source_attacks": 120,
+        "octave_tolerant_coverage": 0.9916666666666667,
+        "quality": 0.986145833333332,
+        "catalog_correction": "MuseScore song_name says D.889; actual score and melody match Schwanengesang D.957 no.4. Work ID corrected from musical evidence.",
+        "remaining_limits": "Different repeat/form treatment: source59 and target82 notated measures; monotonic alignment, one missing source attack."
+      }
+    }
+  ]
+}
